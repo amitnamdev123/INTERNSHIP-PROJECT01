@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SV Polytechnic College</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logosv.png" width="100"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="branch.html">BRANCH</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+        </section>
+
+        <!-----About Us Content----->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>We are the one of the top college of Madhya Pradesh</h1>
+                    <p>NIRF Ranking assesses institutions based on parameters like teaching,
+                        research, outreach, and overall performance. These rankings provide valuable insights
+                        for students, parents, and policymakers in making informed decisions about educational institutions.</p>
+                        <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="images/about.jpg">
+                </div>
+            </div>
+        </section>
+
+        <!-----Footer----->
+
+        <section class="footer">
+            <h4>ABOUT US</h4>
+            <p>Give details of your experience and background and evidence to support this.
+                Maybe mention the people and<br>companies you have worked with in the past, possibly opinions.</p>
+               <img src="images/facebook.png">
+               <img src="images/instagram.png">
+               <img src="images/linkedin.png">
+               <img src="images/X.png">
+        </section>
+
+        <!-----JavaScript for Toggle Menue----->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            <!---JavaScript for Toggle Menu---> 
+
+            function showmenu(){
+                navLinks.style.right = "0";
+            }
+            function hidemenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>

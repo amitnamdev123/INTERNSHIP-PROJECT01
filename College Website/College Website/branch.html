@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SV Polytechnic College</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logosv.png" width="100"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="branch.html">BRANCH</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <h1>Our Branches</h1>
+        </section>
+
+        <!-----Branches----->
+        <section class="branch"> 
+            <h1>Branches We Have</h1>
+            <p>Computer Science, Information Technology, Electrical, Civil, Mechanical, Videography</p>
+
+            <div class="row">
+                <div class="branch-col">
+                    <h3>2 Year Diploma</h3>
+                    <p>2 year diploma complition certificate</p>
+                </div>
+                <div class="branch-col">
+                    <h3>3 Year Diploma</h3>
+                    <p>3 year diploma complition certificate</p>
+                </div>
+                <div class="branch-col">
+                    <h3>Pharmacy</h3>
+                    <p>Pharmacy complition certificate</p>
+                </div>
+            </div>
+        </section>
+
+        <!-----Facilities----->
+        <section class="facilities">
+            <h3>Our Facilities</h3>
+            <p>Our campus is equipped with state-of-the-art classrooms and well-furnished labs,
+                providing an ideal environment for learning and research.
+            </p>
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/library.png">
+                    <h3>Library</h3>
+                    <p>The S.V Polytechnic College Library serves as the heart of our
+                        academic community, offering a rich collection of resources and
+                        a peaceful environment for study and research.
+                    </p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/basketball.png">
+                    <h3>Playground</h3>
+                    <p>At S.V Polytechnic College, we believe in the importance of physical fitness and recreation alongside academics.
+                        Our playground offers student a place of relax, engage in sports,
+                        and foster team  spirit.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/cafeteria.png">
+                    <h3>Tasty Food</h3>
+                    <p>The cafeteria offers comfortable seating, with both indoor and outdoor
+                        options. Whether you prefer a quiet spot to study or a lively atmosphere
+                        to catch up with friends, the cafeteria provides a welcomming for all. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-----Footer----->
+
+        <section class="footer">
+            <h4>ABOUT US</h4>
+            <p>Give details of your experience and background and evidence to support this.
+                Maybe mention the people and<br>companies you have worked with in the past, possibly opinions.</p>
+               <img src="images/facebook.png">
+               <img src="images/instagram.png">
+               <img src="images/linkedin.png">
+               <img src="images/X.png">
+        </section>
+
+        <!-----JavaScript for Toggle Menue----->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            <!---JavaScript for Toggle Menu---> 
+
+            function showmenu(){
+                navLinks.style.right = "0";
+            }
+            function hidemenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>

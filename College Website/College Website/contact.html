@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SV Polytechnic College</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logosv.png" width="100"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="branch.html">BRANCH</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <h1>Contact Us</h1>
+        </section>
+
+        <!-----Contact Us----->
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.950288486
+            065!2d77.39361047509888!3d23.244895979018416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13
+            .1!3m3!1m2!1s0x397c42a3fa4917eb%3A0xbc2133bb30e58db8!2sSardar%20Vallabh%20Bhai%20P
+            olytechnic%20College!5e0!3m2!1sen!2sin!4v1727062741175!5m2!1sen!2sin" width="600" 
+            height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Poltyechnic Chauraha</h5>
+                            <p>Bhopal, Madhya Pradesh, IN</p>
+                        </span>
+                    </div>
+                    </div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+91 4628567890</h5>
+                            <p>Moday to Saturday, 10AM to 5PM</p>
+                        </span>
+                    </div>
+                    </div>
+                        <i class="fa fa-envelope"></i>
+                        <span>
+                            <h5>info@svpoly.com</h5>
+                            <p>Email us your query</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+
+                    <form action="form-handler.php" method="post">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <input type="text" name="subject" placeholder="Enter your subject" required>
+                        <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                        <button type="submit" class="hero-btn red-btn">Send Message</button> 
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-----Footer----->
+
+        <section class="footer">
+            <h4>ABOUT US</h4>
+            <p>Give details of your experience and background and evidence to support this.
+                Maybe mention the people and<br>companies you have worked with in the past, possibly opinions.</p>
+               <img src="images/facebook.png">
+               <img src="images/instagram.png">
+               <img src="images/linkedin.png">
+               <img src="images/X.png">
+        </section>
+
+        <!-----JavaScript for Toggle Menue----->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            <!---JavaScript for Toggle Menu---> 
+
+            function showmenu(){
+                navLinks.style.right = "0";
+            }
+            function hidemenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>
